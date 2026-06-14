@@ -1,0 +1,44 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-portrait .sl-content { width: 100%; }
+.mode-landscape .sl-visual { width: 45%; min-height: 100%; }
+.mode-portrait .sl-visual { width: 100%; min-height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block text-xs font-bold tracking-widest uppercase text-violet-600 border border-violet-200 rounded-full px-3 py-1">Personal Workspace</span>
+      </div>
+
+      <div>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight mb-5">
+          Your creative vision.<br/>No compromises.
+        </h1>
+        <p class="text-base text-slate-500 max-w-xs leading-relaxed">
+          A personal AI image generation workspace powered by your own API key — no platform restrictions, no artificial caps, no subscriptions.
+        </p>
+      </div>
+
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=vivid%20surreal%20digital%20art%20kaleidoscope%2C%20rich%20jewel%20colors%2C%20AI%20creative%20workspace%2C%20editorial%20aesthetic%2C%20abstract%20painting"
+        alt="Creative AI imagery"
+        class="w-full h-full object-cover"
+      />
+      <!-- Blend edge into white content column -->
+      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
