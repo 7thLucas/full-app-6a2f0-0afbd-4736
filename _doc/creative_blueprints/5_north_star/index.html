@@ -1,0 +1,70 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-1">North Star Metric</p>
+        <h2 class="text-3xl font-black text-slate-900">Weekly Verified Operations</h2>
+        <p class="text-sm text-slate-500 mt-1">The single number this workspace lives by — images successfully generated per week.</p>
+      </div>
+      <span class="shrink-0 ml-4 bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-full">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- WVO formula block -->
+    <div class="bg-slate-900 rounded-2xl p-6 mb-4">
+      <p class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-1">Verified Operation: Image Generated</p>
+      <p class="text-slate-400 text-xs mb-4">A prompt submitted → image successfully returned by the API. Clicks, edits, and page views are not operations.</p>
+      <div class="flex flex-wrap items-end gap-3">
+        <div class="bg-slate-800 rounded-xl px-5 py-3 text-center">
+          <p class="text-xs text-slate-400 mb-0.5">Users</p>
+          <p class="text-2xl font-black text-white">1</p>
+        </div>
+        <p class="text-slate-400 text-xl font-bold pb-2">×</p>
+        <div class="bg-amber-950 border border-amber-600 rounded-xl px-5 py-3 text-center">
+          <p class="text-xs text-amber-400 mb-0.5">Generations / week <em class="font-normal">(Assumption — adjust this)</em></p>
+          <p class="text-2xl font-black text-amber-300">50</p>
+        </div>
+        <p class="text-slate-400 text-xl font-bold pb-2">=</p>
+        <div class="bg-violet-600 rounded-xl px-6 py-3 text-center">
+          <p class="text-xs text-violet-200 mb-0.5">WVO / week</p>
+          <p class="text-3xl font-black text-white">50</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Value & ROI cards -->
+    <div class="grid grid-cols-3 gap-4 flex-1">
+
+      <div class="bg-violet-50 rounded-2xl p-5 flex flex-col">
+        <p class="text-xs font-bold tracking-wider uppercase text-slate-400 mb-2">Value / Operation</p>
+        <p class="text-2xl font-black text-violet-700 mb-1">~$1.00</p>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          2 min creative time saved × $30 / hr equivalent = $1.00 / generation
+          <br/><em class="text-slate-400">(Assumption — adjust this)</em>
+        </p>
+      </div>
+
+      <div class="bg-violet-50 rounded-2xl p-5 flex flex-col">
+        <p class="text-xs font-bold tracking-wider uppercase text-slate-400 mb-2">Annual Value</p>
+        <p class="text-2xl font-black text-violet-700 mb-1">$2,600</p>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          50 ops / wk × $1.00 × 52 weeks = $2,600 / yr in creative time value
+        </p>
+      </div>
+
+      <div class="bg-slate-900 rounded-2xl p-5 flex flex-col">
+        <p class="text-xs font-bold tracking-wider uppercase text-slate-400 mb-2">vs. Subscriptions</p>
+        <p class="text-2xl font-black text-violet-400 mb-1">~$52 / yr</p>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          API costs only: 50 / wk × $0.02 × 52 weeks, vs. $120–360 / yr for commercial platforms
+          <br/><em class="text-slate-500">(Assumption — adjust this)</em>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
